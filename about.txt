@@ -1,0 +1,27 @@
+HTML:
+-boilderplate with 2 extra links for specific fonts in addition to the CSS links
+-Div container in body which holds the player. Uses divs to create the various boxes and titles in the player as well as the artwork.
+-Makes divs with display classes so that the elements can be changed to display the song / artist as they are changed in the JS. 
+-All the buttons are created within the player display div which will control the functionality of the player. 
+-The svg and path somehow control the graphical element of the player. 
+-Underneath the player theere is a div for the playlist which will display the list of upcoming songs, allow deleting and shuffling with the buttons above. 
+-Script tag to link to the JS file. 
+
+CSS:
+- root file started to hold variables for the colors and fonts used in the player. 
+-uses flex positionoing on the container holder the player and the playlist to center the itmes vertically and horizontally. 
+-adds some styling to the playing classes to highlight the songs as they are being clicked on to be played. 
+-adds some functionality to deleting itmes via hover which highlihts the delete button and turns it red. 
+
+JS: 
+-declare useful variables for playlist / button useing DOM get element by id. 
+-create an array to store all of the songs in
+-create a new Audio (built in option for audio files)
+-user data object to store songs and relevent info like playing currently and time elapsed. 
+-funciton using arrow sytax to play songs, it finds a song baesed on its id and causes it to play. It also checks if the song is already playing and updated the display accordingly. 
+-pause song removes the playing class which will stop the song from playing. Nex tna preivous change the order of the index in the array contianing the songs to play next or last.
+-shuffle uses Math.random to sort songs randomly and create a random playlist. 
+-complex function to delete songs and create a new playlist if you delete all songs. 
+-funcntions to control the text display of songs and highlight the song that is playing. 
+-render song accepts an array of songs and builds the html needed. 
+-series of event listeners to control which functions run when buttons are pressed. 
